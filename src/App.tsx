@@ -6,10 +6,10 @@ import Carousel from "./componentes/carrusel";
 import AboutUs from "./componentes/nosotros";
 import Advantages from "./componentes/ventajas";
 import AuthPage from "./componentes/pages/authPage";
-import RecuperarContrasena from "./componentes/pages/recuperarContra";
-import CrearCuenta from "./componentes/pages/login";
 import AdminParqueadero from "./componentes/adminParqueo";
-import GestionParqueadero from "./componentes/pages/gestionParqueo";
+import Login from "./componentes/pages/login";
+import CrearCuenta from "./componentes/pages/register";
+import GestionParqueo from "./componentes/pages/gestionParqueo";
 
 
 const App: React.FC = () => {
@@ -31,9 +31,10 @@ const App: React.FC = () => {
       />
       {/* Ruta para la página de autenticación */}
       <Route path="/auth" element={<AuthPage />} />
-      <Route path="/recuperarContrasena" element={<RecuperarContrasena />} />
+      <Route path="/login" element={<Login />} />
+      <Route path="/GestionParqueadero" element={<GestionParqueo />} />
       <Route path="/CrearCuenta" element={<CrearCuenta />} />
-      <Route path="/GestionParqueadero" element={<GestionParqueadero />} />
+  
 
     </Routes>
     <Footer />

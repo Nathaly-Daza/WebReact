@@ -35,8 +35,8 @@ const Header: React.FC = () => {
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="/auth">
-                  Regístrate o Inicia Sesión
+                <a className="nav-link" href="/CrearCuenta">
+                  Administrador GUX
                 </a>
               </li>
             </ul>
